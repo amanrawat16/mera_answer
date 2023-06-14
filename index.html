@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Navbar</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <style>
+    .navbar-toggler span {
+      display: block;
+      width: 24px;
+      height: 2px;
+      margin-bottom: 6px;
+      transition: transform 0.3s ease-in-out;
+    }
+    .navbar-toggler span:nth-child(2) {
+      transform-origin: center;
+    }
+    .navbar-toggler[aria-expanded="true"] span:nth-child(1) {
+      transform: rotate(45deg) translate(6px, 6px);
+    }
+    .navbar-toggler[aria-expanded="true"] span:nth-child(2) {
+      opacity: 0;
+    }
+    .navbar-toggler[aria-expanded="true"] span:nth-child(3) {
+      transform: rotate(-45deg) translate(6px, -6px);
+    }
+    li a{
+        font-size: 22px;
+        font-weight: 700;
+    }
+    .nav-link{
+        padding: 0 !important;
+    }
+    li{
+        padding: 12px 14px;
+    }
+    .top-section{
+        background-color:#071d35;
+        padding: 80px;
+    }
+    .top-section p{
+        color: #66bddd;
+        font-size: 32px;
+        font-weight: 700;
+    }
+    .top-section h1{
+        font-size: 40px;
+        padding-top: 60px;
+    }
+    .top-btn{
+        margin-top: 30px;
+        background-color: #66bddd;
+        font-weight: 700;
+        font-size: 20px;
+        border-radius: 28px;
+        padding: 14px 22px;
+    }
+    .top-section img{
+        padding-left: 40px;
+    }
+
+    .card-body{
+        padding: 2rem;
+    }
+    .card {
+        border: 0px;
+      box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+    }
+    .courses-batch{
+        padding: 80px 0px;
+    }
+    .courses-batch h2{
+        font-weight: 700;
+        font-size: 40px;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <a class="navbar-brand font-weight-bold" href="#">
+        <h2>MERA ANSWER</h2>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+            <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">About Us</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Assessments</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Blog</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link sign-in-btn" href="#">Sign In</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+<section class="top-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 text-light">
+        <h1>Pathway To Your Passion</h1>
+        <p class="animated-text " id="animated-text"> </p>
+        <button class="btn top-btn">Take a Free Assessment</button>
+      </div>
+      <div class="col-md-6">
+        <img src="./mjnUWy1674813340.webp" alt="Image" class="img-fluid">
+      </div>
+    </div>
+  </div> 
+</section>
+  <!-- Rest of the content goes here -->
+<section class=" courses-batch">
+    <h2 class="text-center">Know the Best in You</h2>
+    <div class="container">
+        <div class="row text-center">
+          <div class="col-md-4">
+            <div class="card mb-4">
+             <div class="card-body">
+              <img class="img-fluid" src="./8-9.d1411555bd0bfa964c1d.png" class="card-img-top" alt="Logo 1">
+                <h5 class="card-title">8th-9th</h5>
+                <p class="card-text">Looking for the perfect
+                    stream and subjects
+                    you will enjoy?</p>
+                <button class="btn btn-primary">Start</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-4">
+                <div class="card-body">
+                <img class="img-fluid" src="./10-12.2496f0b1f4462bb5540a.png" class="card-img-top" alt="Logo 2">
+                <h5 class="card-title">10th-12th</h5>
+                <p class="card-text">Looking for the
+                    right course to pursue
+                    your dreams?</p>
+                <button class="btn btn-primary">Start</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-4">
+                <div class="card-body">
+                  <img class="img-fluid" src="./cg.2f8b29336298130e3709.png" class="card-img-top" alt="Logo 3">
+                <h5 class="card-title">College Graduates</h5>
+                <p class="card-text">Caught between choosing
+                    a specialization and
+                    getting a job?</p>
+                <button class="btn btn-primary">Start</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-4">
+                <div class="card-body">
+                  <img class="img-fluid" src="./download.png" class="card-img-top" alt="Logo 4">
+                <h5 class="card-title">Woking Professionals</h5>
+                <p class="card-text">Not satisfied with your
+                    current job? Want to
+                    switch career paths?</p>
+                <button class="btn btn-primary">Start</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-4">
+                <div class="card-body">
+                  <img class="img-fluid" src="./ech.319f53eb3b6031166751.png" class="card-img-top" alt="Logo 4">
+                <h5 class="card-title">Early Education</h5>
+                <p class="card-text">Not satisfied with your
+                    current job? Want to
+                    switch career paths?</p>
+                <button class="btn btn-primary">Start</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-4">
+                <div class="card-body">
+                  <img class="img-fluid" src="./gov.9fa24464c6ec0915262e.png" class="card-img-top" alt="Logo 4">
+                <h5 class="card-title">For Government</h5>
+                <p class="card-text">Not satisfied with your
+                    current job? Want to
+                    switch career paths?</p>
+                <button class="btn btn-primary">Start</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-4">
+                <div class="card-body">
+                  <img class="img-fluid" src="./csr.98540840da255386b597.png" class="card-img-top" alt="Logo 4">
+                <h5 class="card-title">For NGO & CSR</h5>
+                <p class="card-text">Not satisfied with your
+                    current job? Want to
+                    switch career paths?</p>
+                <button class="btn btn-primary">Start</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+</section>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <script>
+    // Add animation to navbar toggler
+    const navbarToggler = document.querySelector('.navbar-toggler');
+    navbarToggler.addEventListener('click', function() {
+      this.setAttribute('aria-expanded', this.getAttribute('aria-expanded') === 'false' ? 'true' : 'false');
+    });
+
+    // Animated Text
+    document.addEventListener('DOMContentLoaded', function() {
+      const animatedTextElement = document.getElementById('animated-text');
+      const textContent = 'Tech based Career Counselling Organization that strives to make you dream big.';
+      let index = 0;
+
+      function animateText() {
+        animatedTextElement.textContent += textContent[index];
+        index++;
+        if (index < textContent.length) {
+          setTimeout(animateText, 200);
+        } else {
+          animatedTextElement.classList.add('fadeIn');
+        }
+      }
+
+      animateText();
+    });
+
+  </script>
+</body>
+</html>
