@@ -4,8 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Responsive Navbar</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
   <style>
+    .bi-star-fill{
+      color: rgb(226, 195, 20);
+    }
     .navbar-toggler span {
       display: block;
       width: 24px;
@@ -48,6 +53,19 @@
         font-size: 40px;
         padding-top: 60px;
     }
+    .searchbox {
+    width: fit-content;
+    border-radius: 30px;
+    background-color: #071d35;
+    font-size: 18px;
+    font-weight: 700;
+}
+input {
+    border-color: white;
+    border-radius: 30px;
+    height: 45px;
+    padding-left: 38px;
+}
     .top-btn{
         margin-top: 30px;
         background-color: #66bddd;
@@ -105,7 +123,7 @@
   }
   .usp{
     margin: 80px 0px;
-  
+    background: ghostwhite;
   }
   .why-mentor{
     background-color: ghostwhite;
@@ -115,6 +133,35 @@
     font-weight: 500;
     font-size: 20px;
   }
+  .swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    /* .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    } */
+    /* Footer Styles */
+    footer p{
+  color: gray;
+  font-size: 20px;
+}
+footer h4{
+  font-size: 25px;
+}
+
   </style>
 </head>
 <body>
@@ -271,6 +318,77 @@
     </div>
 </section>
 
+<section class="reviews py-5">
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <img src='./QU41JM1663581350.png' class="img-fluid rounded-circle" alt="Reviewer Image">
+            </div>
+            <div class="col-md-8 d-flex align-items-center">
+              <div class="review-content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis efficitur elit vitae felis aliquam, nec lacinia risus gravida. Sed ultrices est id leo vestibulum dignissim.</p>
+                <h4>Preeti Singh</h4>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                </svg> <!-- Replace with desired icon class -->
+              </div>
+            </div>
+          </div>
+        </div>        
+      </div>
+      <div class="swiper-slide">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <img src="./qTo3yJ1674799352.webp" class="img-fluid rounded-circle" alt="Reviewer Image">
+            </div>
+            <div class="col-md-8 d-flex align-items-center">
+              <div class="review-content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis efficitur elit vitae felis aliquam, nec lacinia risus gravida. Sed ultrices est id leo vestibulum dignissim.</p>
+                <h4>Sunita Bisht</h4>
+                <i class="fas fa-star"></i> <!-- Replace with desired icon class -->
+              </div>
+            </div>
+          </div>
+        </div>        
+      </div>
+      <div class="swiper-slide">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <img src="./PGoAWN1674800934.webp" class="img-fluid rounded-circle" alt="Reviewer Image">
+            </div>
+            <div class="col-md-8 d-flex align-items-center">
+              <div class="review-content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis efficitur elit vitae felis aliquam, nec lacinia risus gravida. Sed ultrices est id leo vestibulum dignissim.</p>
+                <h4>Alex Dior</h4>
+                <i class="fas fa-star"></i> <!-- Replace with desired icon class -->
+              </div>
+            </div>
+          </div>
+        </div>        
+      </div>
+
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+</section>
+
 <section class="usp">
     <div class="container">
         <div class="row">
@@ -341,6 +459,53 @@
     </div>
 </section>
 
+
+
+<footer class="mt-5">
+  <div class="container-fluid bg-dark text-white">
+    <div class="row  py-5">
+      <div class="col col-md-4">
+        <img src="" alt="MERA ANSWER">
+        <h4 class="offer">Sign up for offers</h4>
+        <div class="searchbox">
+          <svg fill="currentColor" class="bi bi-search" width="30px" height="30px" viewBox="0 0 16 16">
+            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+          </svg>
+          <input class="search-input" type="search" name="searchbox" placeholder="Enter Your Email">
+        </div>
+      </div>
+      <div class="col col-md-2">
+        <h4>Links</h4>
+        <p>Home</p>
+        <p>Projects</p>
+        <p>Blog</p>
+        <p>Category</p>
+      </div>
+      <div class="col col-md-2">
+        <h4>Features</h4>
+        <p>About US</p>
+        <p>Instructions</p>
+        <p>Catelog</p>
+        <p>Contact us</p>
+      </div>
+      <div class="col col-md-2">
+        <h4>Company</h4>
+        <p>Pivacy</p>
+        <p>Terms</p>
+        <p>Security</p>
+      </div>
+      <div class="col col-md-2">
+        <h4>Legal & Terms</h4>
+        <p>Pivacy</p>
+        <p>Terms</p>
+        <p>Security</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
@@ -369,7 +534,17 @@
 
       animateText();
     });
-
+    var swiper = new Swiper(".mySwiper", {
+      autoplay: {
+      delay: 3000, // Set the autoplay delay (in milliseconds)
+    },
+    loop: true, // Enable looping through slides
+      pagination: {
+        el: ".swiper-pagination",
+        dynamicBullets: true,
+      },
+      
+    });
   </script>
 </body>
 </html>
