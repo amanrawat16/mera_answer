@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+</head>
+<style>
+     .navbar-toggler span {
+      display: block;
+      width: 24px;
+      height: 2px;
+      margin-bottom: 6px;
+      transition: transform 0.3s ease-in-out;
+      background: black;
+    }
+    .navbar-toggler span:nth-child(2) {
+      transform-origin: center;
+    }
+    .navbar-toggler[aria-expanded="true"] span:nth-child(1) {
+      transform: rotate(45deg) translate(6px, 6px);
+    }
+    .navbar-toggler[aria-expanded="true"] span:nth-child(2) {
+      opacity: 0;
+    }
+    .navbar-toggler[aria-expanded="true"] span:nth-child(3) {
+      transform: rotate(-45deg) translate(6px, -6px);
+    }
+    li a{
+        font-size: 22px;
+        font-weight: 700;
+    }
+    .nav-link{
+        padding: 0 !important;
+    }
+    li{
+        padding: 12px 14px;
+    }
+    .searchbox {
+    width: fit-content;
+    border-radius: 30px;
+    background-color: #071d35;
+    font-size: 18px;
+    font-weight: 700;
+}
+input {
+    border-color: white;
+    border-radius: 30px;
+    height: 45px;
+    padding-left: 38px;
+}
+footer p{
+  color: gray;
+  font-size: 20px;
+}
+footer h4{
+  font-size: 25px;
+}
+.sign-in-btn{
+  background-color: #071d35;
+  border-radius: 18px;
+  padding: 12px 14px !important;
+  font-size: 18px;
+}
+</style>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand font-weight-bold" href="#">
+            <h2>MERA ANSWER</h2>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <div class="collapse navbar-collapse " id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active d-flex align-items-center">
+                <a class="nav-link" href="./index.html">Home</a>
+            </li>
+            <li class="nav-item d-flex align-items-center">
+                <a class="nav-link" href="./services.html">Services</a>
+            </li>
+            <li class="nav-item d-flex align-items-center">
+                <a class="nav-link" href="./about.html">About Us</a>
+            </li>
+
+            <li class="nav-item d-flex align-items-center">
+              <a class="nav-link sign-in-btn text-light" href="#">Sign In</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+
+
+      <div class="container-fluid">
+        <img src="./7965337_3699666.jpg" alt="" class="img-fluid">
+        <h1 class="text-center">About Us</h1>
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Company History</h5>
+                        <p class="card-text">Insert company history content here.</p>
+                    </div>
+                </div>
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Our Team</h5>
+                        <p class="card-text">Insert information about our team here.</p>
+                    </div>
+                </div>
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Success Stories</h5>
+                        <p class="card-text">Share success stories and testimonials from our clients here.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Our Philosophy</h5>
+                        <p class="card-text">Describe our company's philosophy and values here.</p>
+                    </div>
+                </div>
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Why Choose Us</h5>
+                        <p class="card-text">Highlight the reasons why clients should choose our services.</p>
+                    </div>
+                </div>
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Resources</h5>
+                        <p class="card-text">Provide links to educational resources, blog, and FAQs.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Contact Us</h5>
+                        <p class="card-text">Include contact information and a form for consultation scheduling.</p>
+                    </div>
+                </div>
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Location</h5>
+                        <p class="card-text">Provide the address and map of our location.</p>
+                    </div>
+                </div>
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Social Media Links</h5>
+                        <p class="card-text">Include links to our social media profiles.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Join as a Consultant</h5>
+                        <p class="card-text">Provide information and a form for individuals interested in joining as a consultant.</p>
+                    </div>
+                </div>
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Join as an Advisory Council</h5>
+                        <p class="card-text">Include information and a form for individuals interested in joining the Advisory Council.</p>
+                    </div>
+                </div>
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Career</h5>
+                        <p class="card-text">Provide information about career opportunities within the company.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Disclosure to Third Parties</h5>
+                        <p class="card-text">Include information about the disclosure of data to third parties.</p>
+                    </div>
+                </div>
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Terms and Conditions</h5>
+                        <p class="card-text">Provide the terms and conditions of using our services.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Website Usage</h5>
+                        <p class="card-text">Include information about the usage terms of our website.</p>
+                    </div>
+                </div>
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Privacy Policy</h5>
+                        <p class="card-text">Provide details about our privacy policy and how we handle user data.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+      <footer class="mt-5">
+        <div class="container-fluid bg-dark text-white">
+          <div class="row  py-5">
+            <div class="col col-md-4">
+              <img src="" alt="MERA ANSWER">
+              <h4 class="offer">Sign up for offers</h4>
+              <div class="searchbox">
+                <svg fill="currentColor" class="bi bi-search" width="30px" height="30px" viewBox="0 0 16 16">
+                  <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                </svg>
+                <input class="search-input" type="search" name="searchbox" placeholder="Enter Your Email">
+              </div>
+            </div>
+            <div class="col col-md-2">
+              <h4>Links</h4>
+              <p>Home</p>
+              <p>Projects</p>
+              <p>Blog</p>
+              <p>Category</p>
+            </div>
+            <div class="col col-md-2">
+              <h4>Features</h4>
+              <p>About US</p>
+              <p>Instructions</p>
+              <p>Catelog</p>
+              <p>Contact us</p>
+            </div>
+            <div class="col col-md-2">
+              <h4>Company</h4>
+              <p>Pivacy</p>
+              <p>Terms</p>
+              <p>Security</p>
+            </div>
+            <div class="col col-md-2">
+              <h4>Legal & Terms</h4>
+              <p>Pivacy</p>
+              <p>Terms</p>
+              <p>Security</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+      <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <script>
+    // Add animation to navbar toggler
+    const navbarToggler = document.querySelector('.navbar-toggler');
+    navbarToggler.addEventListener('click', function() {
+      this.setAttribute('aria-expanded', this.getAttribute('aria-expanded') === 'false' ? 'true' : 'false');
+    });
+
+    // Animated Text
+    document.addEventListener('DOMContentLoaded', function() {
+      const animatedTextElement = document.getElementById('animated-text');
+      const textContent = 'Tech based Career Counselling Organization that strives to make you dream big.';
+      let index = 0;
+
+      function animateText() {
+        animatedTextElement.textContent += textContent[index];
+        index++;
+        if (index < textContent.length) {
+          setTimeout(animateText, 200);
+        } else {
+          animatedTextElement.classList.add('fadeIn');
+        }
+      }
+
+      animateText();
+    });
+    var swiper = new Swiper(".mySwiper", {
+      autoplay: {
+      delay: 3000, // Set the autoplay delay (in milliseconds)
+    },
+    loop: true, // Enable looping through slides
+      pagination: {
+        el: ".swiper-pagination",
+        dynamicBullets: true,
+      },
+      
+    });
+  </script>
+</body>
+</html>
