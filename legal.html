@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+
+<style>
+    .navbar-toggler span {
+      display: block;
+      width: 24px;
+      height: 2px;
+      margin-bottom: 6px;
+      transition: transform 0.3s ease-in-out;
+      background: black;
+    }
+    .navbar-toggler span:nth-child(2) {
+      transform-origin: center;
+    }
+    .navbar-toggler[aria-expanded="true"] span:nth-child(1) {
+      transform: rotate(45deg) translate(6px, 6px);
+    }
+    .navbar-toggler[aria-expanded="true"] span:nth-child(2) {
+      opacity: 0;
+    }
+    .navbar-toggler[aria-expanded="true"] span:nth-child(3) {
+      transform: rotate(-45deg) translate(6px, -6px);
+    }
+    li a{
+        font-size: 22px;
+        font-weight: 700;
+    }
+    .nav-link{
+        padding: 0 !important;
+    }
+    li{
+        padding: 12px 14px;
+    }
+    body {
+      background-image: url('background-image.jpg');
+      background-size: cover;
+      color: #fff;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 50px;
+      background-color: rgba(0, 0, 0, 0.7);
+      border-radius: 5px;
+    }
+
+    h1 {
+      font-size: 36px;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    h3 {
+      font-size: 24px;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+    }
+
+    h3 svg {
+      width: 24px;
+      height: 24px;
+      margin-right: 10px;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    a {
+      color: #fff;
+      text-decoration: underline;
+    }
+    a {
+  color: inherit;
+  text-decoration: none;
+}
+a:hover, a:focus {
+  color: inherit;
+  text-decoration: none;
+}
+.searchbox {
+    width: fit-content;
+    border-radius: 30px;
+    background-color: #071d35;
+    font-size: 18px;
+    font-weight: 700;
+}
+input {
+    border-color: white;
+    border-radius: 30px;
+    height: 45px;
+    padding-left: 38px;
+}
+h3, svg{
+    color: orange;
+}
+</style>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand font-weight-bold p-0 m-0" href="#">
+            <img style="width: auto; height: 135px; object-fit: none;" src="./log.A54qmjOObS405mRjU_VXL8zKHsktg5_gAeVD9XbKDNBRc4XiR9f7Tm0KnzIjK78Hqs5ZCpc-" alt="" >
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <div class="collapse navbar-collapse " id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active d-flex align-items-center">
+                <a class="nav-link" href="./index.html">Home</a>
+            </li>
+            <li class="nav-item d-flex align-items-center">
+                <a class="nav-link" href="./services.html">Services</a>
+            </li>
+            <li class="nav-item d-flex align-items-center">
+                <a class="nav-link" href="/about.html">About Us</a>
+            </li>
+    
+            <li class="nav-item d-flex align-items-center">
+              <a class="nav-link sign-in-btn text-light" href="#">Sign In</a>
+            </li>
+          </ul>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <h1>Legal Policies</h1>
+    
+        <h3><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-lock"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg> Disclosure to Third Parties</h3>
+        <p>MeraAnswer.com does not share any personal information or data with third parties without your explicit consent, except where required by law.</p>
+    
+        <h3><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 3v4a1 1 0 0 0 1 1h4"></path><path d="M9 21V8a1 1 0 0 1 1-1h6l-3-7H5v18"></path></svg> Terms and Conditions</h3>
+        <p>By using our website and services, you agree to the terms and conditions outlined on our website. These terms and conditions govern your use of our website, as well as any services or products offered by MeraAnswer.com.</p>
+    
+        <h3><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-globe"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.31 15.31 0 0 1 4 10 15.31 15.31 0 0 1-4 10 15.31 15.31 0 0 1-4-10 15.31 15.31 0 0 1 4-10z"></path></svg> Website Usage</h3>
+        <p>You may only use our website for lawful purposes and in accordance with our terms and conditions. You may not use our website in any way that is fraudulent, malicious, or harmful to others.</p>
+    
+        <h3><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-alert-circle"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12" y2="16"></line></svg> Limitations of Liability</h3>
+        <p>MeraAnswer.com is not liable for any damages or losses resulting from the use of our website or services, including but not limited to direct, indirect, incidental, or consequential damages. We do not guarantee the accuracy, completeness, or usefulness of any information provided on our website.</p>
+    
+        <h3><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-shield"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 7l10 5 10-5"></path></svg> Privacy Policy</h3>
+        <p>We value your privacy and are committed to protecting your personal information. Our privacy policy outlines how we collect, use, and store your information. Please refer to our <a href="#">privacy policy page</a> for more information.</p>
+    
+        <h3><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg> Use of Information</h3>
+        <p>MeraAnswer.com collects and uses personal information for the purposes of providing our services, communicating with clients, and improving our website and services. We do not sell or rent your personal information to third parties. Please refer to our privacy policy for more information on how we use your personal information.</p>
+    
+        <p>By using our website and services, you agree to these legal terms and conditions. Please <a href="#">contact us</a> if you have any questions or concerns regarding our legal policies.</p>
+      </div>
+
+      <footer class="mt-5">
+        <div class="container-fluid bg-dark text-white">
+          <div class="row  py-5">
+            <div class="col col-md-4">
+              <img src="" alt="MERA ANSWER">
+              <h4 class="offer">Sign up for offers</h4>
+              <div class="searchbox">
+                <svg fill="currentColor" class="bi bi-search" width="30px" height="30px" viewBox="0 0 16 16">
+                  <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                </svg>
+                <input class="search-input" type="search" name="searchbox" placeholder="Enter Your Email">
+              </div>
+            </div>
+            <div class="col col-md-2">
+              <h4>Links</h4>
+              <p>Home</p>
+              <p>Projects</p>
+              <p>Blog</p>
+              <p>Category</p>
+            </div>
+            <div class="col col-md-2">
+              <h4>Features</h4>
+              <p>About US</p>
+              <p>Instructions</p>
+              <p>Catelog</p>
+              <p>Contact us</p>
+            </div>
+            <div class="col col-md-2">
+              <h4>Company</h4>
+              <p>Pivacy</p>
+              <p>Terms</p>
+              <p>Security</p>
+            </div>
+            <div class="col col-md-2">
+              <h4>Legal & Terms</h4>
+              <p><a class="" href="./legal.html">Privacy</a></p>
+              <p><a class="" href="./legal.html">Terms</a></p>
+              <p><a class="" href="./legal.html">Security</a></p>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  
+</body>
+</html>
