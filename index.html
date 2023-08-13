@@ -6,7 +6,8 @@
   <title>Responsive Navbar</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
 
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"> -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <style>
 
 
@@ -106,7 +107,9 @@ input {
     .top-section img{
         padding-left: 40px;
     }
-
+    .text{
+      font-weight: 600 !important;
+    }
     .card-body{
         padding: 2rem;
     }
@@ -117,6 +120,9 @@ input {
     }
     .card-text{
       color: white;
+    }
+    .usp-tt{
+      font-weight: 700;
     }
     .card {
         border: 0px;
@@ -141,7 +147,7 @@ input {
     height: auto;
 }
 .why-text{
-  padding: 80px;
+  padding-top: 80px;
 }
 .why-mentor{
   position: relative;
@@ -149,7 +155,7 @@ input {
     background-image: url('./talking-audience_1098-14094.jpg');
     background-position: center;
     background-size: cover;
-    height: 550px;
+    padding-top: 220px;
     width: 100%;
     z-index: 2;
 }
@@ -159,7 +165,7 @@ input {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.6); /* Adjust the opacity as needed */
+    background-color: rgba(15, 5, 38, 0.6); /* Adjust the opacity as needed */
     z-index: 1;
 }
 .why-mentor .container {
@@ -193,14 +199,12 @@ input {
     fill: #1b89b1;
   }
   .usp{
-    margin: 80px 0px;
     padding: 60px;
-    background: ghostwhite;
   }
 
   .usp-text{
     color: #1b89b1;
-    font-weight: 500;
+    font-weight: 700;
     font-size: 20px;
   }
   .swiper {
@@ -228,6 +232,9 @@ input {
   color: gray;
   font-size: 20px;
 }
+.usp-head{
+  font-weight: 700;
+}
 footer{
   background-color: #071d35;
 }
@@ -251,7 +258,9 @@ a:hover, a:focus {
 .navbar-brand{
   padding-left: 70px !important;
 }
-
+.ic{
+  color: #1b89b1;
+}
 @media (min-width: 0) and (max-width: 500px) {
   .why-mentor {
     text-align: center !important;
@@ -280,6 +289,33 @@ a:hover, a:focus {
   .align-items-center{
     margin: 0 auto !important;
   }
+  .top-section{
+    padding: 100px 10px !important;
+  }
+  .rev{
+  height: 200px;
+}
+.review-content h4{
+  padding-top: 20px;
+  font-weight: 700;
+}
+.usp-text{
+  font-size: 18px;
+}
+}
+.navbar-nav{
+  padding-right:20px;
+}
+.why-mentor li {
+  list-style: none !important;
+}
+.why-text p{
+  color: lightgoldenrodyellow;
+  font-size: 19px;
+}
+.why-text li{
+  color: lightgoldenrodyellow;
+  font-size: 19px;
 }
 
   </style>
@@ -312,6 +348,7 @@ a:hover, a:focus {
       </ul>
     </div>
   </nav>
+
 <section class="top-section">
   <div class="container">
     <div class="row">
@@ -407,15 +444,99 @@ a:hover, a:focus {
             <div class="why-text">
                
                 <p>Mere Mentor is India’s leading digital platform offering career guidance, career preference and career decision making source with a blend of technology and human expertise</p>
-                <ul>
+                <!-- <ul>
                     <li>Assessment: Explore key components in an individual that drive career decisions</li>
                     <li>Career counselling: Sessions that dive deeper to explore possibilities that bring the best in you</li>
-                </ul>
+                </ul> -->
             </div>
             
         </div>
     </div>
 </section>
+
+
+
+<section class="usp">
+  <div class="container">
+      <div class="row">
+          
+          <div class="col-md-6 text-dark">
+              <h2 class="usp-head">Our USPs</h2>
+              <p class="usp-text ">Choicest features that make us bring the best for you and broadens our orbit of reach</p>
+             
+              <ul class="list-unstyled">
+                  <li class="list-item">
+                      <div class="row align-items-center">
+                          <div class="col-md-1  text-center p-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height='auto' fill="currentColor" class="ic bi bi-bank2" viewBox="0 0 16 16">
+                              <path d="M8.277.084a.5.5 0 0 0-.554 0l-7.5 5A.5.5 0 0 0 .5 6h1.875v7H1.5a.5.5 0 0 0 0 1h13a.5.5 0 1 0 0-1h-.875V6H15.5a.5.5 0 0 0 .277-.916l-7.5-5zM12.375 6v7h-1.25V6h1.25zm-2.5 0v7h-1.25V6h1.25zm-2.5 0v7h-1.25V6h1.25zm-2.5 0v7h-1.25V6h1.25zM8 4a1 1 0 1 1 0-2 1 1 0 0 1 0 2zM.5 15a.5.5 0 0 0 0 1h15a.5.5 0 1 0 0-1H.5z"/>
+                            </svg>
+                          </div>
+                          <div class="col">
+                              <h5 class="usp-tt">Career Library</h5>
+                              <p class="text">Extensive details about a plethora of career paths and how to get there</p>
+                          </div>
+                      </div>
+                     
+                      
+                    </li>
+                    <li class="list-item">
+                      <div class="row align-items-center">
+                          <div class="col-md-1   text-center p-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height='auto' fill="currentColor" class="ic bi bi-input-cursor" viewBox="0 0 16 16">
+                              <path d="M10 5h4a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1h-4v1h4a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-4v1zM6 5V4H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v-1H2a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h4z"/>
+                              <path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v13a.5.5 0 0 1-1 0v-13A.5.5 0 0 1 8 1z"/>
+                            </svg>
+                            </div>
+                          <div class="col">
+                              <h5 class="usp-tt">End to End support</h5>
+                              <p class="text">Customer support right from the first query to the last quest</p>
+                          </div>
+                      </div>
+                     
+                      
+                    </li>
+                    <li class="list-item">
+                      <div class="row align-items-center">
+                          <div class="col-md-1  text-center p-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height='auto' fill="currentColor" class="ic bi bi-newspaper" viewBox="0 0 16 16">
+                              <path d="M0 2.5A1.5 1.5 0 0 1 1.5 1h11A1.5 1.5 0 0 1 14 2.5v10.528c0 .3-.05.654-.238.972h.738a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 1 1 0v9a1.5 1.5 0 0 1-1.5 1.5H1.497A1.497 1.497 0 0 1 0 13.5v-11zM12 14c.37 0 .654-.211.853-.441.092-.106.147-.279.147-.531V2.5a.5.5 0 0 0-.5-.5h-11a.5.5 0 0 0-.5.5v11c0 .278.223.5.497.5H12z"/>
+                              <path d="M2 3h10v2H2V3zm0 3h4v3H2V6zm0 4h4v1H2v-1zm0 2h4v1H2v-1zm5-6h2v1H7V6zm3 0h2v1h-2V6zM7 8h2v1H7V8zm3 0h2v1h-2V8zm-3 2h2v1H7v-1zm3 0h2v1h-2v-1zm-3 2h2v1H7v-1zm3 0h2v1h-2v-1z"/>
+                            </svg>
+                            </div>
+                          <div class="col">
+                              <h5 class="usp-tt">Assessments</h5>
+                              <p class="text">A unique tool built keeping in mind the specific requirements of the age groups</p>
+                          </div>
+                      </div>
+                     
+                      
+                    </li>
+                    <li class="list-item">
+                      <div class="row align-items-center">
+                          <div class="col-md-1  text-center p-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height='auto' fill="currentColor" class="bi bi-person-badge-fill ic" viewBox="0 0 16 16">
+                              <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2zm4.5 0a.5.5 0 0 0 0 1h3a.5.5 0 0 0 0-1h-3zM8 11a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm5 2.755C12.146 12.825 10.623 12 8 12s-4.146.826-5 1.755V14a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-.245z"/>
+                            </svg>
+                          </div>
+                          <div class="col">
+                              <h5 class="usp-tt">Exam stress Buster</h5>
+                              <p class="text">The one form of hassle even students carry, and we are here to help you tackle that</p>
+                          </div>
+                      </div>
+                     
+                      
+                    </li>
+              </ul>
+          </div>
+          <div class="col-md-6">
+              <img class="img-fluid" src="./think-outside-box-concept-illustration_114360-15044.avif" alt="Image" class="carad-img">
+            </div>
+      </div>
+  </div>
+</section>
+
+
 
 <section class="reviews py-5">
   <div class="swiper mySwiper">
@@ -424,12 +545,12 @@ a:hover, a:focus {
         <div class="container">
           <div class="row">
             <div class="col-md-4">
-              <img src='./QU41JM1663581350.png' class="img-fluid rounded-circle" alt="Reviewer Image">
+              <img src='./QU41JM1663581350.png' class="rev img-fluid rounded-circle" alt="Reviewer Image">
             </div>
             <div class="col-md-8 d-flex align-items-center">
               <div class="review-content">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis efficitur elit vitae felis aliquam, nec lacinia risus gravida. Sed ultrices est id leo vestibulum dignissim.</p>
                 <h4>Preeti Singh</h4>
+                <p>This website transformed my career confusion into clarity. The tools and expert advice helped me discover my strengths and passions, and the user-friendly interface made navigation a breeze. Highly recommended!</p>
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
                   <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
                 </svg>
@@ -454,13 +575,27 @@ a:hover, a:focus {
         <div class="container">
           <div class="row">
             <div class="col-md-4">
-              <img src="./qTo3yJ1674799352.webp" class="img-fluid rounded-circle" alt="Reviewer Image">
+              <img src="./qTo3yJ1674799352.webp" class="img-fluid rev rounded-circle" alt="Reviewer Image">
             </div>
             <div class="col-md-8 d-flex align-items-center">
               <div class="review-content">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis efficitur elit vitae felis aliquam, nec lacinia risus gravida. Sed ultrices est id leo vestibulum dignissim.</p>
                 <h4>Sunita Bisht</h4>
-                <i class="fas fa-star"></i> <!-- Replace with desired icon class -->
+                <p>This site guided me, a recent grad, toward exciting career possibilities. The assessments, articles, and success stories provided a comprehensive view. Smooth navigation and bookmarking feature were a plus. Now I'm on track and motivated.</p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                </svg> <!-- Replace with desired icon class -->
               </div>
             </div>
           </div>
@@ -470,13 +605,27 @@ a:hover, a:focus {
         <div class="container">
           <div class="row">
             <div class="col-md-4">
-              <img src="./PGoAWN1674800934.webp" class="img-fluid rounded-circle" alt="Reviewer Image">
+              <img src="./PGoAWN1674800934.webp" class="img-fluid rev rounded-circle" alt="Reviewer Image">
             </div>
             <div class="col-md-8 d-flex align-items-center">
               <div class="review-content">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis efficitur elit vitae felis aliquam, nec lacinia risus gravida. Sed ultrices est id leo vestibulum dignissim.</p>
                 <h4>Alex Dior</h4>
-                <i class="fas fa-star"></i> <!-- Replace with desired icon class -->
+                <p>Found my perfect career fit here. Tailored assessments and one-on-one coaching were a game-changer. Practical job search resources sealed the deal. A must-visit for serious career seekers.</p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                </svg> <!-- Replace with desired icon class -->
               </div>
             </div>
           </div>
@@ -488,79 +637,68 @@ a:hover, a:focus {
   </div>
 </section>
 
-<section class="usp">
-    <div class="container">
-        <div class="row">
-            
-            <div class="col-md-6 text-dark">
-                <h1>Our USPs</h1>
-                <p class="usp-text">Choicest features that make us bring the best for you and broadens our orbit of reach</p>
-               
-                <ul class="list-unstyled">
-                    <li class="list-item">
-                        <div class="row align-items-center">
-                            <div class="col-md-1  text-center p-1">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 431.2" class="svg-inject icon-svg icon-svg-sm text-primary me-5"><path class="lineal-fill" d="M125.8 121.3h86.6v296.4h-86.6zM299 13.5h86.6v404.2H299z"></path><path class="lineal-stroke" d="M498.5 404.2h-11.8V161.7c0-7.5-6-13.5-13.5-13.5s-13.5 6-13.5 13.5v242.5h-59.6V94.3h73.1c7.4 0 13.5-6 13.5-13.5s-6-13.5-13.5-13.5h-74.1V13.5c0-7.4-6-13.5-13.5-13.5H299c-7.4 0-13.5 6-13.5 13.5v134.8h-59.7v-27c0-7.4-6-13.5-13.5-13.5h-73.6V33.7c0-7.4-6-13.5-13.5-13.5H38.7c-7.4 0-13.5 6-13.5 13.5v294.4c0 7.5 6 13.5 13.5 13.5s13.5-6 13.5-13.5V47.2h59.7v357.1H13.5c-7.4.2-13.3 6.4-13.1 13.8.2 7.2 6 12.9 13.1 13.1h485.1c7.4-.2 13.3-6.4 13.1-13.8-.3-7.2-6-13-13.2-13.2zM139.3 134.7H199v269.5h-59.7V134.7zm86.6 40.5h59.7v229h-59.7v-229zm86.6 229V27h59.7v377.2h-59.7z"></path></svg>
-                            </div>
-                            <div class="col">
-                                <h5 class="font-weight-bold">Career Library</h5>
-                                <p class="text">Extensive details about a plethora of career paths and how to get there</p>
-                            </div>
-                        </div>
-                       
-                        
-                      </li>
-                      <li class="list-item">
-                        <div class="row align-items-center">
-                            <div class="col-md-1   text-center p-1">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inject icon-svg icon-svg-sm text-primary me-5"><circle class="lineal-fill" cx="283.8" cy="283.8" r="143"></circle><path class="lineal-stroke" d="M283.8 441.8c-87.1 0-158-70.9-158-158s70.9-158 158-158 158 70.9 158 158-70.9 158-158 158zm0-286.1c-70.7 0-128.1 57.3-128.1 128.1S213 411.9 283.8 411.9s128.1-57.3 128.1-128.1c-.1-70.7-57.4-128-128.1-128.1z"></path><path class="lineal-fill" d="M283.8 210.5c40.5 0 73.3 32.8 73.3 73.3s-32.8 73.3-73.3 73.3-73.3-32.8-73.3-73.3"></path><path class="lineal-stroke" d="M283.8 372.1c-48.7-.1-88.2-39.5-88.2-88.3.2-8.2 7.1-14.8 15.3-14.5 7.9.2 14.3 6.6 14.5 14.5 0 32.2 26.1 58.4 58.4 58.4s58.4-26.1 58.4-58.4-26.1-58.4-58.4-58.4c-8.2-.2-14.8-7.1-14.5-15.3.2-7.9 6.6-14.3 14.5-14.5 48.7-.5 88.7 38.6 89.2 87.3s-38.6 88.7-87.3 89.2h-1.9z"></path><path class="lineal-fill" d="M107.9 55.1l-5.3 47.5-47.5 5.3-40.2-40.1 52.9-52.9z"></path><path class="lineal-stroke" d="M283.8 55.7c-55.3 0-108.8 20.1-150.4 56.7l-15.2-15.2 4.5-40.4c.5-4.5-1.1-9-4.3-12.2L78.3 4.4c-5.8-5.8-15.3-5.8-21.1 0L4.4 57.2c-5.8 5.8-5.8 15.3 0 21.1l40.1 40.1c2.8 2.8 6.6 4.4 10.6 4.4.5 0 1.1 0 1.6-.1l40.4-4.5 15.2 15.2c-36.6 41.5-56.7 95-56.7 150.4C55.7 409.6 158 512 283.8 512c66.2 0 129.1-28.7 172.4-78.7 5.6-6.1 5.1-15.6-1-21.1s-15.6-5.1-21.1 1l-.5.5c-37.7 43.4-92.3 68.4-149.8 68.4-109.3 0-198.3-89-198.3-198.3 0-47.4 17-93.3 48-129.2l140.2 140.2c5.8 5.8 15.3 5.8 21.1 0s5.8-15.3 0-21.1L154.6 133.5c35.9-31 81.8-48 129.2-48 109.4 0 198.3 89 198.3 198.3 0 8.3 6.7 14.9 14.9 14.9s14.9-6.7 14.9-14.9C512 158 409.6 55.7 283.8 55.7zM36.1 67.8l31.7-31.7 24.5 24.5-3.2 28.5-28.5 3.2-24.5-24.5z"></path></svg>
-                            </div>
-                            <div class="col">
-                                <h5 class="font-weight-bold">End to End support</h5>
-                                <p class="text">Customer support right from the first query to the last quest</p>
-                            </div>
-                        </div>
-                       
-                        
-                      </li>
-                      <li class="list-item">
-                        <div class="row align-items-center">
-                            <div class="col-md-1  text-center p-1">
-                               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 427.5" class="svg-inject icon-svg icon-svg-sm text-primary me-5"><path class="lineal-fill" d="M186.9 353.4h138.3V413H186.9z"></path><path class="lineal-stroke" d="M460.2 0H51.8C23.2 0 0 23.2 0 51.7v264.4c0 28.6 23.2 51.7 51.8 51.8h120.6v30.7h-28.8c-8 0-14.5 6.5-14.5 14.5s6.5 14.5 14.5 14.5h224.9c8 0 14.5-6.5 14.5-14.5s-6.5-14.5-14.5-14.5h-28.8v-41.9c.3-1.2.4-2.4.4-3.6-.2-8-6.9-14.3-14.8-14.1H51.8C39.2 339 29 328.8 29 316.2V51.7c0-12.6 10.2-22.8 22.8-22.8h408.5c12.6 0 22.8 10.2 22.8 22.8v264.4c0 12.6-10.2 22.8-22.8 22.8h-46.7c-8 .2-14.3 6.9-14.1 14.8.2 8 6.9 14.3 14.8 14.1h45.9c28.6 0 51.7-23.2 51.8-51.7V51.7C512 23.2 488.8 0 460.2 0zM310.7 367.9v30.7H201.3v-30.7h109.4z"></path><path class="lineal-fill" d="M220.1 271.6c-12.7-19.8-6.9-46.3 12.9-59s46.3-6.9 59 12.9c9 14 9 32 0 46.1h100.6v-50.3l-30.4-4.9c-4.9-16.3-13.6-31.3-25.3-43.7l11-28.7-47.3-27.3-19.4 23.8c-16.6-3.9-33.9-3.9-50.5 0l-19.4-23.8-47.2 27.3 11 28.7c-11.7 12.4-20.3 27.4-25.3 43.7l-30.3 4.9v50.3h100.6z"></path><path class="lineal-stroke" d="M392.5 286.1H291.9c-8 0-14.5-6.5-14.5-14.5 0-2.8.8-5.5 2.3-7.8 8.4-13.1 4.6-30.6-8.6-39-13.1-8.4-30.6-4.6-39 8.6-5.9 9.3-5.9 21.1 0 30.4 4.3 6.7 2.4 15.7-4.3 20-2.3 1.5-5.1 2.3-7.8 2.3H119.4c-8 0-14.5-6.5-14.4-14.5v-50.3c0-7.1 5.2-13.1 12.2-14.3l21.8-3.5c4.7-12.2 11.3-23.6 19.5-33.7l-7.9-20.6c-2.5-6.6.1-14.1 6.3-17.7l47.3-27.3c6.2-3.5 14-2.1 18.5 3.4l13.9 17.1c12.9-2 26.1-2 39 0l13.9-17.1c4.5-5.5 12.3-7 18.5-3.4l47.3 27.3c6.2 3.6 8.8 11.1 6.3 17.7l-7.9 20.6c8.2 10.2 14.7 21.5 19.4 33.7l21.8 3.5c7 1.1 12.2 7.2 12.2 14.3v50.3c-.1 8-6.6 14.5-14.6 14.5zm-80-29h65.6v-23.5l-18.2-2.9c-5.5-.9-10-4.8-11.6-10.1-4.3-14.2-11.9-27.2-22-38-3.8-4-5-9.9-3-15.1l6.6-17.2-25.9-15-11.6 14.3c-3.5 4.3-9.1 6.2-14.5 5-14.5-3.3-29.5-3.3-43.9 0-5.4 1.2-11-.7-14.5-5l-11.6-14.3-25.9 15 6.6 17.2c2 5.2.8 11-3 15.1-10.1 10.8-17.7 23.8-22 38-1.6 5.3-6.1 9.2-11.6 10.1l-18.2 2.9v23.5h65.6c-.4-2.8-.6-5.7-.6-8.6.4-31.6 26.3-56.8 57.9-56.4 31 .4 56 25.4 56.4 56.4 0 2.9-.2 5.8-.6 8.6z"></path></svg>
-                            </div>
-                            <div class="col">
-                                <h5 class="font-weight-bold">Assessments</h5>
-                                <p class="text">A unique tool built keeping in mind the specific requirements of the age groups</p>
-                            </div>
-                        </div>
-                       
-                        
-                      </li>
-                      <li class="list-item">
-                        <div class="row align-items-center">
-                            <div class="col-md-1  text-center p-1">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 409.6 362.5" class="svg-inject icon-svg icon-svg-sm text-primary me-5"><path class="lineal-stroke" d="M343.4 302.9L61 302.5c-25.3-.2-47.5-16.8-54.8-40.9l-3.9-12.9c-7.1-24.2 2.5-50.3 23.5-64.2L262.1 29.8c5.7-3.7 13.3-2.1 17 3.6.7 1 1.2 2.1 1.5 3.2l74.3 249.8c2.4 6.4-.9 13.5-7.3 15.8-1.3.5-2.8.7-4.2.7zM261.8 59.4L39.3 205c-12 7.9-17.4 22.8-13.4 36.6l3.8 12.9c4.2 13.8 16.8 23.3 31.2 23.4l265.8.4-64.9-218.9z"></path><path class="lineal-stroke" d="M138 362.5c-40.4 0-72.8-31.1-73.6-70.8 0-6.8 5.5-12.3 12.3-12.3 6.6 0 12.1 5.2 12.3 11.8.6 26.2 22.1 46.7 49 46.7 14.2 0 27.7-6.2 37-16.9 4.5-5.1 12.2-5.7 17.4-1.2 5.1 4.5 5.7 12.2 1.2 17.4-14 16.1-34.3 25.3-55.6 25.3z"></path><path class="lineal-fill" d="M183.4 96l57.8 194.5 102.1.1-74.5-250.5L183.4 96z"></path><path class="lineal-stroke" d="M343.4 302.9l-102.1-.1c-5.4 0-10.2-3.6-11.8-8.8L171.6 99.5c-1.6-5.2.5-10.8 5.1-13.8l85.4-55.9c5.7-3.7 13.3-2.1 17 3.6.7 1 1.2 2.1 1.5 3.2l74.5 250.6c1.9 6.5-1.8 13.4-8.3 15.3-1.1.2-2.3.4-3.4.4zm-92.9-24.7l76.4.1-65.1-218.9-63.9 41.8 52.6 177z"></path><path class="lineal-stroke" d="M351.8 330.6c-5.4 0-10.2-3.6-11.8-8.8l-91-306c-2.1-6.5 1.3-13.4 7.8-15.6 6.5-2.1 13.4 1.3 15.6 7.8.1.3.2.5.2.8l91 305.9c1.9 6.5-1.8 13.4-8.3 15.3-1.1.4-2.3.6-3.5.6zM338 91.7c-6.8 0-12.3-5.5-12.3-12.3 0-1.8.4-3.6 1.2-5.3l13.4-28.5c2.9-6.2 10.2-8.8 16.4-5.9 6.2 2.9 8.8 10.2 5.9 16.4l-13.4 28.5c-2.1 4.3-6.4 7.1-11.2 7.1zm28.2 64.9c-6.8 0-12.3-5.5-12.3-12.3 0-5.7 3.9-10.6 9.4-12l31.1-7.5c6.6-1.5 13.2 2.6 14.7 9.3 1.5 6.5-2.5 13-9 14.7l-31.2 7.4c-.8.3-1.8.4-2.7.4zm29.1 90c-2.7 0-5.4-.9-7.5-2.6l-24.9-19.4c-5.4-4.2-6.3-11.9-2.2-17.3s11.9-6.3 17.3-2.2l24.9 19.4c5.4 4.2 6.3 11.9 2.1 17.3-2.3 3-5.9 4.7-9.7 4.8z"></path></svg>
-                            </div>
-                            <div class="col">
-                                <h5 class="font-weight-bold">Exam stress Buster</h5>
-                                <p class="text">The one form of hassle even students carry, and we are here to help you tackle that</p>
-                            </div>
-                        </div>
-                       
-                        
-                      </li>
-                </ul>
-            </div>
-            <div class="col-md-6">
-                <img class="img-fluid" src="./usp-home.48e71780ac40ad05ad79.png" alt="Image" class="carad-img">
-              </div>
-        </div>
+<section class="container text-center my-5 py-5">
+  <h3 class="font-weight-bold py-4">FAQs: What students usually ask us?</h3>
+  <div class="accordion accordion-flush" id="accordionFlushExample">
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="flush-headingOne">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+          1. What is this career guidance website all about?
+        </button>
+      </h2>
+      <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body text-start">This website is dedicated to helping individuals navigate their career paths by providing personalized assessments, expert advice, and a wealth of resources related to various industries and job roles.</div>
+      </div>
     </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="flush-headingTwo">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+          2. How can this website help me find the right career path?
+        </button>
+      </h2>
+      <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body text-start">Our platform offers comprehensive career assessments that analyze your strengths, interests, and skills. Based on your profile, we provide tailored suggestions for potential career options that align with your strengths and passions.</div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="flush-headingThree">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+          3. Are the career assessments accurate?
+        </button>
+      </h2>
+      <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body text-start">Our assessments are designed to provide valuable insights, but individual results may vary. We recommend combining the assessment results with your self-awareness and further research to make informed decisions.</div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="flush-headingFour">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+          4. Are there real success stories associated with this website?
+        </button>
+      </h2>
+      <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body text-start">Yes, we have a collection of success stories from individuals who have successfully transformed their careers using our platform. These stories showcase real-world examples of how our guidance has made a positive impact.</div>
+      </div>
+    </div>
+    
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="flush-headingFive">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+          5. Is there personal support available?
+        </button>
+      </h2>
+      <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body text-start">Absolutely! We offer one-on-one coaching sessions with experienced career coaches who can provide personalized guidance, answer your questions, and assist you in making informed career decisions.</div>
+      </div>
+    </div>
+  </div>
+  
 </section>
 
 
 
-<footer class="mt-5">
+
+<footer >
   <div class="container-fluid text-white">
     <div class="row  py-5 text-center">
       <div class="col-md-4">
@@ -607,8 +745,10 @@ a:hover, a:focus {
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-  <script>
+  <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+ <script>
     // Add animation to navbar toggler
     const navbarToggler = document.querySelector('.navbar-toggler');
     navbarToggler.addEventListener('click', function() {
